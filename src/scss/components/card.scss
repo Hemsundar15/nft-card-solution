@@ -1,0 +1,75 @@
+.card{
+    padding: 24px;
+    width: 375px;
+
+    background: var(--very-dark-blue-2--clr);
+    border-radius: 20px;
+
+    &__imageholder{
+        aspect-ratio: 1/1;
+        background: url('/src/assets/image-equilibrium.jpg');
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    &__stats{
+        margin: 24px 0 0 0;
+        padding: 0 0 24px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--very-dark-blue-3--clr);
+
+        .card__points{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            
+            .ETH{
+                color: var(--cyan--clr);
+                font-weight: 600;
+            }
+        }
+
+        .card__time{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            .days{
+                color: var(--soft-blue--clr);
+            }
+        }
+    }
+
+    &__profileholder{
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        img{
+            width: 34px;
+            aspect-ratio: 1/1;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+
+        h6{
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--soft-blue--clr);
+
+            span{
+                color: var(--white--clr);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .card{
+        width: 327px;
+    }
+}

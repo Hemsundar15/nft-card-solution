@@ -1,0 +1,31 @@
+
+body{
+	font-family: var(--outfit--fnt);
+}
+
+.card__title{
+	font-size: 22px;
+	font-weight: 600;
+	color: var(--white--clr);
+	margin-top: 25px;
+}
+
+.card__description{
+	font-size: 18px;
+	font-weight: 300;
+	color: var(--soft-blue--clr);
+	letter-spacing: 0.5px;
+	margin-top: 20px;
+}
+
+@media only screen and (max-width: 425px) {
+	.card__description{
+		font-size: 16px;
+	}
+}
+
+a,
+a:visited,
+a:active {
+	text-decoration: none;
+}
